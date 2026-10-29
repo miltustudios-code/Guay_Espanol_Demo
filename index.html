@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#c72e34">
+  <meta name="description" content="Prototipo conceptual para Guay Spanish School: práctica en Murcia para cursos intensivos y extensivos, preparación DELE y seguimiento docente.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Guay Spanish School · Aula de práctica</title>
+  <link rel="icon" type="image/png" href="assets/guay-logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="academic.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir al contenido</a>
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar" aria-label="Menú principal">
+      <a class="brand" href="#inicio" data-view="home"><img class="brand-logo" src="assets/guay-logo.png" alt="Guay Spanish School"><span class="brand-place">MURCIA · ESPAÑA</span></a>
+      <p class="side-label" id="nav-label">TU APRENDIZAJE</p>
+      <nav id="navigation" aria-label="Secciones del aula"></nav>
+      <div class="sidebar-note"><span class="side-label">APRENDER EN CONTEXTO</span><p>Tu español en clase.<br>Tu confianza en Murcia.</p><span class="location" id="sidebar-context">Español y vida en Murcia</span></div>
+      <div class="sidebar-bottom"><button class="side-link" data-action="about">Sobre la propuesta</button><span>Preparado por Miltu Studios</span></div>
+    </aside>
+    <div class="shell">
+      <header class="topbar">
+        <div class="topbar-start"><button class="icon-button mobile-menu" id="menu-button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false"><span data-icon="menu"></span></button><span class="topbar-title">Aula de práctica <span>/</span> <span id="breadcrumb">Mi aprendizaje</span></span><span class="demo-badge">Prototipo</span></div>
+        <div class="topbar-controls"><div class="role-switch" role="group" aria-label="Elegir experiencia"><button id="student-role" data-role="student" aria-pressed="true">Estudiante</button><button id="teacher-role" data-role="teacher" aria-pressed="false">Docente</button></div><div class="avatar" id="profile-avatar" aria-label="Alex, perfil ilustrativo">AL</div></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="page-heading"><div><div class="eyebrow" id="page-eyebrow">GUAY SPANISH SCHOOL</div><h1 id="page-title">Tu español, dentro y fuera del aula.</h1><p id="page-subtitle">Practica, gana confianza y disfruta de tu experiencia en Murcia.</p></div><label class="level-label" id="level-control">Nivel de práctica<select id="level-select"><option value="A2">A2 · Español cotidiano</option><option value="B1">B1 · Vive Murcia</option></select></label></div>
+        <div id="content"></div>
+        <footer class="footer"><span>Prototipo conceptual preparado por <b>Miltu Studios</b> para Guay Spanish School.</span><button class="text-button" data-action="about">Datos ilustrativos · propuesta académica</button></footer>
+      </main>
+    </div>
+  </div>
+  <button class="mobile-shade" id="mobile-shade" aria-label="Cerrar menú" hidden></button>
+  <dialog id="practice-dialog" aria-labelledby="practice-title"><div class="dialog-top"><span id="practice-label" class="eyebrow"></span><button id="close-practice" class="icon-button" data-action="close-practice" aria-label="Cerrar actividad"><span data-icon="close"></span></button></div><div id="practice-content"></div></dialog>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow" id="detail-label">PROPUESTA ACADÉMICA</span><button class="icon-button" data-action="close-detail" aria-label="Cerrar detalle"><span data-icon="close"></span></button></div><div id="detail-content"></div></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">Miltu Studios · propuesta para Guay Spanish School</span><button class="icon-button" data-action="close-about" aria-label="Cerrar información"><span data-icon="close"></span></button></div><h2 id="about-title">Práctica entre clases. Información para enseñar.</h2><p>Este prototipo propone una experiencia con la identidad de Guay Spanish School, orientada a la práctica del estudiante y al seguimiento del equipo académico.</p><div class="about-grid"><section><h3>Para el estudiante</h3><p>Seis unidades A2/B1 con lectura, audio, quiz, escritura y práctica oral en situaciones de Murcia, para complementar las clases intensivas y extensivas.</p></section><section><h3>Para el docente</h3><p>Resultados por destreza, asignación de refuerzo y una bandeja de correcciones conectada con la experiencia del estudiante.</p></section><section><h3>Alcance de la demostración</h3><p>Los perfiles, resultados previos, fechas y clases son ficticios. Las acciones se guardan solo en este navegador. No hay acceso a datos de Guay ni a sistemas de la escuela. Los horarios, precios y actividades de los ejercicios son ficticios.</p></section><section><h3>Revisión académica</h3><p>Las actividades son originales y conceptuales. El temario, la evaluación y los materiales finales se adaptarían con el equipo de Guay. La ruta de esta muestra se centra en DELE; SIELE requeriría su propio recorrido. Las guías automáticas no acreditan un nivel de idioma.</p></section></div><p class="source-note">Referencia de contexto: <a href="https://guayspanishschool.com/por-que-estudiar-espanol-en-murcia-espana/" target="_blank" rel="noopener">Metodología y vida en Murcia · Guay Spanish School</a>. Práctica de referencia: <a href="https://examenes.cervantes.es/es/dele/examenes/a2" target="_blank" rel="noopener">DELE A2</a> y <a href="https://examenes.cervantes.es/es/dele/examenes/b1" target="_blank" rel="noopener">DELE B1</a>. Las muestras no reproducen un examen oficial.</p><div class="button-row"><button class="button" data-action="close-about">Explorar el aula</button><button class="text-button" data-action="reset">Reiniciar datos de demostración</button></div></dialog>
+  <dialog id="reset-dialog" aria-labelledby="reset-title"><h2 id="reset-title">¿Reiniciar los datos de demostración?</h2><p>Se borrarán las respuestas, comentarios y asignaciones creados aquí. Volverán los perfiles y resultados ilustrativos iniciales.</p><div class="button-row"><button class="button secondary" data-action="cancel-reset">Conservar mis cambios</button><button class="button" data-action="confirm-reset">Reiniciar</button></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="notice">Activa JavaScript para usar las actividades y el panel docente.</p></noscript>
+</body>
+</html>
+
